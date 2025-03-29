@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <form class="d-flex" role="search">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Create a new post
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                  <div class="d-grid gap-2 d-md-block mt-2">
+                    <button class="btn btn-light border-secondary" type="button"><i class="fa-solid fa-camera"></i></button>
+                    <button class="btn btn-light border-secondary" type="button"><i class="fa-solid fa-location-dot"></i></button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <ul class="nav nav-pills my-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+        type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+          class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+        type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+          class="fa-solid fa-square"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content mx-5 mb-5" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+      tabindex="0">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img src="https://preview.redd.it/m51d0udbm4u11.jpg?auto=webp&s=c31d1c0afc02a8b242cfbf5764504e076c92e091"
+              class="img-thumbnail" style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="https://tb-static.uber.com/prod/image-proc/processed_images/e67244a86086410b7771f5b037e2ef5f/50446f64f31cbefe66558fc47f50a9d6.jpeg"
+              class="img-thumbnail" style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img src="https://motor.elpais.com/wp-content/uploads/2022/06/2023-BMW-M3-Touring-41_1.jpg"
+              class="img-thumbnail" style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="https://estaticos-cdn.prensaiberica.es/clip/d8190233-e992-4fc1-aab4-9a50ea57da46_source-aspect-ratio_default_0.jpg"
+              class="img-thumbnail" style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img src="https://louderthanwar.com/wp-content/uploads/2025/02/Pantera_Pountney_4.jpg" class="img-thumbnail"
+              style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="https://s1.abcstatics.com/abc/www/multimedia/espana/2024/07/03/rockfest-U56581274435LZS-1200x630@diario_abc.jpg"
+              class="img-thumbnail" style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img src="https://img.remediosdigitales.com/677ec9/bmw-e30-m3-redux-13/840_560.jpg" class="img-thumbnail"
+              style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="https://media.eitb.eus/multimedia/images/2024/06/01/3236795/20240601233321_real-madrid-champions-lea_amp_w1200_webp.webp"
+              class="img-thumbnail" style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2016/09/19081623/iStock_89077585_MEDIUM.jpg"
+              class="img-thumbnail" style="object-fit: cover;" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">23/08</p>
+        </div>
+        <img src="https://preview.redd.it/m51d0udbm4u11.jpg?auto=webp&s=c31d1c0afc02a8b242cfbf5764504e076c92e091"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>1321 likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">11/08</p>
+        </div>
+        <img
+          src="https://tb-static.uber.com/prod/image-proc/processed_images/e67244a86086410b7771f5b037e2ef5f/50446f64f31cbefe66558fc47f50a9d6.jpeg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>1270 likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">23/07</p>
+        </div>
+        <img src="https://motor.elpais.com/wp-content/uploads/2022/06/2023-BMW-M3-Touring-41_1.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5>2971 likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">07/07</p>
+        </div>
+        <img
+          src="https://estaticos-cdn.prensaiberica.es/clip/d8190233-e992-4fc1-aab4-9a50ea57da46_source-aspect-ratio_default_0.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>5670 likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">06/07</p>
+        </div>
+        <img src="https://louderthanwar.com/wp-content/uploads/2025/02/Pantera_Pountney_4.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5>9350 likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">05/07</p>
+        </div>
+        <img
+          src="https://s1.abcstatics.com/abc/www/multimedia/espana/2024/07/03/rockfest-U56581274435LZS-1200x630@diario_abc.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>2130 likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">23/08</p>
+        </div>
+        <img src="https://img.remediosdigitales.com/677ec9/bmw-e30-m3-redux-13/840_560.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5>3009 likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">23/08</p>
+        </div>
+        <img
+          src="https://media.eitb.eus/multimedia/images/2024/06/01/3236795/20240601233321_real-madrid-champions-lea_amp_w1200_webp.webp"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5>1389 likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card mx-auto mb-5" style="width: 40rem;">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <p class="mb-0">pedrovalencia</p>
+          <p class="mb-0">23/08</p>
+        </div>
+        <img
+          src="https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2016/09/19081623/iStock_89077585_MEDIUM.jpg"" class="
+          card-img-top" alt="...">
+        <div class="card-body">
+          <h5>24,5 mil likes</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
